@@ -1,4 +1,4 @@
-FROM node:4.6
+FROM node:4.4.5-nano
 WORKDIR C:\\Projects\\NodeJSApplication
 ADD . C:\\Projects\\NodeJSApplication
 RUN npm install
