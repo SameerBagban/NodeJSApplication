@@ -1,6 +1,7 @@
 FROM stefanscherer/node-windows:6
 WORKDIR C:\\Projects\\NodeJSApplication
-ADD . C:\\Projects\\NodeJSApplication
+COPY package.json C:\\Projects\\NodeJSApplication
 RUN npm install
-EXPOSE 3000
-CMD npm start
+COPY . C:\\Projects\\NodeJSApplication
+CMD node server.js
+EXPOSE 2020
